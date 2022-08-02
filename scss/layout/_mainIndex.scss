@@ -1,0 +1,125 @@
+.nosotros{
+    height: 25rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: $titulo_font;
+    font-weight: bold;
+    color: $titulo_color;
+    font-size: 4rem;
+    background-image: url("../images/frenteLocal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0rem 0rem 5rem 5rem;
+}
+.textoPortada{
+    font-size: 6rem;
+}
+.gridsInicio{
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "texto1"
+    "foto1"
+    "texto2"
+    "foto2"
+    "texto3"
+    "foto3"
+    "videoIndex";
+}
+
+.texto1{
+grid-area: texto1;
+}
+.foto1{
+grid-area: foto1;
+}
+.texto2{
+grid-area: texto2;
+}
+.foto2{
+grid-area: foto2;
+}
+.texto3{
+grid-area: texto3;
+}
+.foto3{
+grid-area: foto3;
+}
+
+.texto1, .texto2, .texto3{
+background-color: #054b44ca;
+color: whitesmoke;
+font-family: $font_general;
+font-size: 1.4rem;
+padding: 1rem 1rem 1rem 1rem;
+}
+
+.imgPortada{
+    width: 100%;
+    height: 100%;
+}
+
+.videoIndex{
+    grid-area: videoIndex;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+@media screen and (min-width: 600px){
+    .nosotros{
+        height: 40rem;
+    }
+
+    .gridsInicio{
+        margin: 2rem 2rem 2rem 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "foto1 texto1"
+        "texto2 foto2"
+        "foto3 texto3"
+        "videoIndex videoIndex";
+    }
+    .texto1, .texto2, .texto3{
+        font-size: 1.6rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-direction: column; 
+        justify-content: center;
+        padding: 2rem 2rem 2rem 2rem;
+        }
+    .videoIndex{
+    height: 40rem;
+    width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .nosotros{
+        height: 55rem;
+        background-position: 0rem -10rem;
+    }
+    .gridsInicio{
+        margin-left: 1.7rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "foto1 texto1 foto2"
+        "texto2 foto3 texto3 "
+        "videoIndex videoIndex videoIndex";
+    }
+    .texto1, .texto2, .texto3{
+        font-size: 1.8rem;
+        }
+    .videoIndex{
+        width: 80rem;
+        height: 40rem;
+        margin-left: 12rem;
+    }
+}

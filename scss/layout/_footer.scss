@@ -1,0 +1,45 @@
+footer{
+    width: 100%;
+    color: aliceblue;
+    margin: 0px auto;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(5,28,20,1) 56%, rgba(13,70,51,1) 96%, rgba(13,70,51,1) 100%);
+    font-family: 'Lato',sans-serif; 
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subir{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    &:hover{
+    transform: scale(1.2);
+    }
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.redesI:hover{
+    transform: scale(1.2);
+}
+.reseña{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    background-color: white;
+    width: 12rem;
+    height: 8rem;
+    border-radius: 10px;
+    padding: 2px 2px 2px 2px;
+    &:hover{
+    transform: scale(1.1);
+    }
+}
